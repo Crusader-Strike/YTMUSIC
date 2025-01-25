@@ -289,7 +289,7 @@ def error_handler(update: object, context: CallbackContext) -> None:
 
 def main():
     """Main entry point of the script."""
-    updater = Updater(os.getenv('TOKEN'), use_context=True)
+    updater = Updater(os.environ.get('TOKEN'), use_context=True)
 
     dispatcher = updater.dispatcher
     debounced_inline_search = debounce(2, inline_search)  # 0.5 seconds delay
