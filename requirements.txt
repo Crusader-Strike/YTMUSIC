@@ -1,0 +1,12 @@
+pytubefix==8.3.2
+python-telegram-bot==13.15
+youtube_search
+python-dotenv
+bs4
+moviepy==1.0.3
+requests
+mutagen
+ffmpeg-python
+youtube_title_parse
+urllib3==1.26.18 # fix for ModuleNotFoundError
+pydub
