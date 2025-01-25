@@ -23,7 +23,7 @@ from utils import log_handling
 from instagram_download import download_instagram_post
 from youtube_download_inline import download_video
 import re
-
+from keep_alive import keep_alive
 # Load environment variables
 load_dotenv()
 
@@ -317,4 +317,5 @@ def main():
     updater.idle()
 
 if __name__ == '__main__':
+    keep_alive()
     main()
