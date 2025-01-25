@@ -314,8 +314,9 @@ def main():
         logger.warning(f'Couldn\'t set my commands for developer chat: {exc.message}')
 
     updater.start_polling()
+    keep_alive()
     updater.idle()
 
 if __name__ == '__main__':
-    keep_alive()
+    
     main()
